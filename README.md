@@ -13,3 +13,5 @@
 	+ Sort by date 
 	+ Functional search
 + Pull comments from github rather than static json
+
+<img src ="/src/styles.screenshot.png">
