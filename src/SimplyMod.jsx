@@ -128,7 +128,7 @@ class SimplyMod extends React.Component {
                     { this.navbarInstance(this.state.key) }
                     <ListGroup>
                       { getCommentsOfStatus(this.state.comments, 'pending').map(comment => 
-                        <ListGroupItem header={ `${comment.author} says...` }>
+                        <ListGroupItem header={ `${comment.author} says...` } className={ `comment-status ${comment.status}` }>
                           <p>{ comment.body } </p>
                           <ButtonToolbar>
                             <Button bsStyle="success" id={"btn-approved"+this.props.index} onClick={() => this.setCommentStatus(this.state.comments, comment, 'approved')}>Approved</Button>
@@ -142,7 +142,7 @@ class SimplyMod extends React.Component {
                     { this.navbarInstance(this.state.key) }
                     <ListGroup>
                       { getCommentsOfStatus(this.state.comments, 'approved').map(comment => 
-                        <ListGroupItem header={ `${comment.author} says...` }>
+                        <ListGroupItem header={ `${comment.author} says...` } className={ `comment-status ${comment.status}` }>
                           <p>{ comment.body } </p>
                           <ButtonToolbar>
                             <Button bsStyle="success" id={"btn-approved"+this.props.index} onClick={() => this.setCommentStatus(this.state.comments, comment, 'approved')} disabled>Approved</Button>
@@ -156,7 +156,7 @@ class SimplyMod extends React.Component {
                     { this.navbarInstance(this.state.key) }
                     <ListGroup>
                       { getCommentsOfStatus(this.state.comments, 'deleted').map(comment => 
-                        <ListGroupItem header={ `${comment.author} says...` }>
+                        <ListGroupItem header={ `${comment.author} says...` } className={ `comment-status ${comment.status}` }>
                           <p>{ comment.body } </p>
                           <ButtonToolbar>
                             <Button bsStyle="success" id={"btn-approved"+this.props.index} onClick={() => this.setCommentStatus(this.state.comments, comment, 'approved')}>Approved</Button>
@@ -170,7 +170,7 @@ class SimplyMod extends React.Component {
                     { this.navbarInstance(this.state.key) }
                     <ListGroup>
                       {this.state.comments.map(comment =>
-                        <ListGroupItem header={ `${comment.author} says...` }>
+                        <ListGroupItem header={ `${comment.author} says...` } className={ `comment-status ${comment.status}` }>
                           <p>{ comment.body } </p>
                           <ButtonToolbar>
                             <Button bsStyle="success" id={"btn-approved"+this.props.index} onClick={() => this.setCommentStatus(this.state.comments, comment, 'approved')}>Approved</Button>

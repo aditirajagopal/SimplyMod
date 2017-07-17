@@ -9,7 +9,7 @@
 
 + Moderate comments from multiple posts
 + Make more pretty & useful
-	+ Status bars
+	+ Add details to comments list (date, post, etc)
 	+ Sort by date 
 	+ Functional search
 + Pull comments from github rather than static json

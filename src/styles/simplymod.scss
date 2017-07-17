@@ -1,0 +1,13 @@
+.comment-status {
+  padding: 8px;
+  border-left: 5px solid transparent;
+  &.pending {
+    border-color: #F6BC00;
+  }
+  &.approved {
+    border-color: #05C5B6;
+  }
+  &.deleted {
+    border-color: #F5250E;
+  }
+}
