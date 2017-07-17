@@ -114,10 +114,6 @@ class SimplyMod extends React.Component {
       <Navbar>
         <Navbar.Form>
             { buttonGroup }
-          <FormGroup>
-            <FormControl type="text" placeholder="Search" />
-          </FormGroup>
-          {' '}
           <Button type="submit">Submit</Button>
           <Button type="sort" onClick={() => this.sortComments(this.state.comments)}>Sort</Button>
         </Navbar.Form>
